@@ -1,6 +1,343 @@
 @charset "UTF-8";
 
-img {
-	width: 100%;
-	height: auto;
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	max-width: 100%;
+	overflow-y: hidden;
+}
+
+h1 {
+	font-size: 3em;
+	text-align: center;
+	border-bottom: 3px solid silver;
+	margin: 40px auto;
+}
+
+
+
+div.testimonial {
+	width:60%;
+	height: 134px;;
+	margin-top: 20px;
+	border-bottom: 3px double silver;
+}
+
+div.testimonial.left {
+	margin-left: 8%;
+}
+
+div.testimonial.right {
+	margin-right: 8%;
+}
+
+div.portrait {
+	width: 100px;
+	height: 131px;
+	border: 1px solid black;
+
+}
+
+p {
+	margin-top: 10px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+div#butz {
+	background-image: url(../images/Larry_Butz_Portrait.png);
+}
+
+div#layton {
+	background-image: url(../images/layton_portrait.png);
+}
+
+div#dumb {
+	background-image: url(../images/dumbledore_portrait.png);
+}
+
+div#edge {
+	background-image: url(../images/edgeworth_portrait.png);
+}
+
+div#hat {
+	background-image: url(../images/mrhat_portrait.png);
+}
+
+div.container {
+	width: 20%;
+}
+
+
+p.content {
+	width: 75%;
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+cite {
+	
+	float: right;
+}
+
+div.dumbledore {
+	position: relative;
+}
+
+cite.dumbledore {
+	position: absolute;
+	bottom: 50px;
+}
+
+p:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:1.5em;
+    color:#7e7e7e;
+    line-height: .8em;
+} 
+
+p:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:1.5em;
+    color:#7e7e7e;
+    line-height: .8em;
+}
+
+div.clearfix {
+	height: 50px;
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 964px)
+{
+	div.testimonial.left {
+		margin-left: 4%;
+	}
+
+	div.testimonial.right {
+		margin-right: 4%;
+	}
+
+	div.testimonial {
+		width:90%;
+		height: 150px;
+		margin-top: 20px;
+		border-bottom: 3px double silver;
+	}
+
+	div#last {
+		margin-bottom: 50px;
+	}
+
+	div.right cite {
+		margin-right: 5%;
+	}
+
+	div.container {
+		height: 100%;
+		width: 110px;
+	}
+	
+}
+
+@media only screen and (min-width: 501px) and (max-width: 679px)
+{
+
+	div.testimonial.left {
+		margin-left: 2%;
+		margin-right: 1%;
+	}
+
+	div.testimonial.right {
+		margin-right: 2%;
+		margin-left: 1%;
+	}
+
+	div.testimonial {
+		width:97%;
+		height: 150px;
+		margin-top: 20px;
+		border-bottom: 3px double silver;
+	}
+
+	div#last {
+		margin-bottom: 50px;
+	}
+
+	div.right blockquote cite {
+		position: relative;
+		right: 50px;
+
+	}
+
+	div.container {
+		height: 100%;
+		width: 110px;
+	}
+
+	div.testimonial {
+		width: 97%;
+	}
+
+	div.left blockquote {
+		margin-left: 10%;
+	}
+
+	div.right blockquote {
+		margin-right: 10%;
+		position: absolute;
+	}
+
+	
+	div.right blockquote p {
+		float: left;
+		padding-left: 5%;
+	}	
+}
+
+@media only screen and (min-width: 501px) and (max-width: 526px)
+{
+	div#last, div#dd {
+		height: 178px;
+	}
+
+}
+
+
+/*@media only screen and (min-width: 50px) and (max-width: 565px)
+{
+	div.testimonial {
+		height: 180px;
+		word-wrap: break-word;
+	}
+
+	blockquote p{
+		height: 100%;
+	}
+
+
+} */
+
+@media only screen and (min-width: 50px) and (max-width: 500px)
+{
+
+	h1 {
+		margin: 5% auto 0 auto;
+	}
+
+	body {
+		min-width: 329px;
+	}
+
+	div.portrait {
+		height: 65px;
+		width: 50px;
+		background-size: contain;
+	}
+
+	main {
+		max-height: 900px;
+		min-height: 600px;
+	}
+	
+	div.clearfix {
+		height: 644px;
+	}
+
+	div.testimonial {
+		width: 80%;
+		height: 162px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	blockquote p.content {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 10px;
+	}
+
+	div.portrait {
+		position: relative;
+	}
+
+	cite {
+		position: absolute;
+		bottom: 30px;
+	}
+
+	div.right div.portrait, div.right div.container {
+		float: left;
+	}
+
+	div.left cite {
+		left: 70px;
+	}
+
+	div.right cite {
+		left: 70px;
+	}
+
+	div.portrait#butz {
+		top: 111px;
+	}
+
+	div.portrait#layton {
+		top: 80px;
+	}
+
+	div.portrait#dumb {
+		top: 150px;
+	}
+
+	div.portrait#edge {
+		top: 155px;
+	}
+
+	div.portrait#hat {
+		top: 150px;
+	}
+
+	div#first {
+		height: 195px;
+	}
+
+	div#second {
+		height: 2000px;
+	}
+
+	div#dd {
+		height: 229px;
+	}
+
+	div#ed {
+		height: 235px;
+	}
+
+	div#last {
+		height:231px;
+	}
+
+
+
+	img.jumbo {
+		z-index: 1;
+	}
+
+	img.line {
+		z-index: 2;
+	}
 }

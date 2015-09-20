@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
+/*img.pic {
+	display: block;
+	border: 2px double black;
+	width: 40%;
+	height: auto;
+	float: right;
+	right: 10px;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+
+article {
+	text-align: left;
+	float: left;
+	margin-right: 25px;
+	margin-top: -165px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
+article p {
+	margin-top: 0px;
+}*/
+
 img.pic {
 	display: block;
 	border: 2px double black;
@@ -14,7 +38,6 @@ img.pic {
 article {
 	text-align: left;
 	float: left;
-	clear:both;
 	margin-right: 25px;
 	margin-top: 19px;
 	margin-left: 20px;
@@ -25,19 +48,42 @@ article p {
 	margin-top: 0px;
 }
 
+
+@media only screen and (min-width: 501px) and (max-width: 964px)
+{
+	img.pic {
+		width: 287px;
+		margin-left: 20px;
+	}
+}
+
 @media only screen and (min-width: 50px) and (max-width: 500px)
 {
 	img.pic {
 		display: none;
 	}
+	
+	article {
+		text-align: left;
+		float: none;
+		clear:both;
+		margin: 0px;
+		margin-top: 20px;
+		
+	}
 
-	main {
-		display: block;
-		position: relative;
-		height: 600px;
+	article h1 {
+		width: 100%;
+		padding-left: 5%;
+	}
 
-	nav{
-		position: relative;
+	article p {
+		margin-top: 0px;
+		padding-left: 5%;
+	}
+
+	article h3 {
+		padding-left: 5%;
 	}
 
 }

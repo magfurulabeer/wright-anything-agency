@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+/*#aec5cc*/
+
+h1 {
+	margin-left: 150px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 3em;
+}
+
+h1#second {
+	margin-top: 120px;
+}
+
+div.profile {
+	background-color: #aec5cc;
+	margin-left: 150px;
+	margin-right:150px;
+	margin-bottom: 50px;
+	border: 3px double black;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+div.profile h2{
+	padding-bottom: 20px;
+}
+
+div.picCrop {
+	width: 150px;
+	height: 181px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+
+a.button {
+	text-decoration: none;
+	background-color: #e79215;
+	color: #fff;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.4em;
+	padding: 10px 52px;
+	border-radius: 5px; 
+}
+
+a.button:hover {
+	/*color: #1d95eb;
+	background-color: #ffff4f;*/
+	opacity: .8;
+}
+
+img:hover {
+	opacity: 80%;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.8em;
+	font-variant: small-caps;
+}
+
+div.left {
+	border-right: 3px double black;
+	display: inline-block;
+	padding-right: 10px;
+	width: 31%;
+}
+
+ul.bio {
+	float: right;
+	height: 100%;
+	width: 65%;
+	list-style: none;
+	margin-top: 20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2em;
+}
+
+ul li p {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+ul li ul {
+	margin-left: 30px;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 500px)
+{
+	main {
+		width: 100%;
+	}
+
+	main h1 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	h1 {
+		margin: 0;
+		margin-top: 5%;
+		font-size: 2em;
+		z-index: 1;
+	}
+
+	h1#second {
+		margin-top: 5%;
+	}
+
+	img.line {
+		z-index: 2;
+	}
+
+	div.profile {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #aec5cc;
+		margin-bottom: 30px;
+		border: 3px double black;
+		border-radius: 5px;
+		padding: 0px;
+		overflow: hidden;
+
+	}
+
+	div.profile h2{
+		padding-bottom: 0px;
+	}
+
+	div.picCrop {
+		width: 150px;
+		height: 181px;
+		overflow: hidden;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid black;
+	}
+
+	a.button {
+		display: block;
+		text-decoration: none;
+		background-color: #e79215;
+		color: #fff;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size: 1.4em;
+		margin: 10px 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		border-radius: 0px;
+		text-align: center;
+	}
+
+	a.button:hover {
+		/*color: #1d95eb;
+		background-color: #ffff4f;*/
+		opacity: .8;
+	}
+
+
+	h2 {
+		font-weight: normal;
+		font-size: 1.4em;
+		font-variant: small-caps;
+	}
+
+	div.left {
+		text-align: center;
+		border-bottom: 3px double black;
+		width: 100%;
+		border-right: none;
+		display: block;
+		padding-right: 0px;
+	}
+
+	ul.bio {
+		float: none;
+		height: 100%;
+		width: 100%;
+		padding-left: 10px;
+		margin-right: 10px;
+	}
+
+	
+	ul.bio li p {
+		padding-right: 10px;
+	}
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 964px)
+{
+
+
+	main h1 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	h1 {
+		margin: 0;
+		margin-top: 5%;
+		font-size: 2em;
+		z-index: 1;
+	}
+
+	h1#second {
+		margin-top: 5%;
+	}
+
+	img.line {
+		z-index: 2;
+	}
+
+	div.profile {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #aec5cc;
+		margin-bottom: 30px;
+		border: 3px double black;
+		border-radius: 5px;
+		padding: 0px;
+		overflow: hidden;
+
+	}
+
+	div.profile h2{
+		padding-bottom: 0px;
+	}
+
+	div.picCrop {
+		width: 150px;
+		height: 181px;
+		overflow: hidden;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid black;
+	}
+
+	a.button {
+		display: block;
+		text-decoration: none;
+		background-color: #e79215;
+		color: #fff;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-size: 1.4em;
+		margin: 10px 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		border-radius: 0px;
+		text-align: center;
+	}
+
+	a.button:hover {
+		/*color: #1d95eb;
+		background-color: #ffff4f;*/
+		opacity: .8;
+	}
+
+
+	h2 {
+		font-weight: normal;
+		font-size: 1.4em;
+		font-variant: small-caps;
+	}
+
+	div.left {
+		text-align: center;
+		border-bottom: 3px double black;
+		width: 100%;
+		border-right: none;
+		display: block;
+		padding-right: 0px;
+	}
+
+	ul.bio {
+		float: none;
+		height: 100%;
+		width: 100%;
+		padding-left: 10px;
+		margin-right: 10px;
+	}
+
+	
+	ul.bio li p {
+		padding-right: 10px;
+	}
+}

@@ -8,10 +8,19 @@ body {
 	background-color: #fff;
 	background-image: url(../images/bg.png);
 	background-repeat: no-repeat;
-	background-position: -50px 0px;
+	background-position: center -50px;
 	background-attachment: fixed;
 	height: 100%;
 }
+
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 
 div.page {
 	
@@ -93,6 +102,7 @@ nav a {
 	padding: 10px;
 	margin: 0px 10px 0px 0px;
 	background-color: #e79215;
+	
 }
 
 nav a:hover {
@@ -156,5 +166,8 @@ footer p {
 	padding-top: 30px;
 }
 
+footer a.button {
+	display: none;
+}
 
 

@@ -5,43 +5,162 @@
 	padding: 0px;
 }
 
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.8em;
+	border-top: 3px double #000000;
+	border-bottom: 3px double #000000;
+	/*border-top: 3px double #09aee5;
+	border-bottom: 3px double #09aee5;
+	color: #fff;
+	background-color: #0c42a6;*/
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+}
+
+p {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.2em;
+}
+
 header {
-	/*#e1e7ea*/
+	display: block;
+	position: relative;
 	border-bottom: 1px solid #333;
-	height: 300px;
 	background-color: #355497;
 }
 
 img.logo {
-	display: none;
-	width: 100%;
+	content: url(../images/smallLogo.png);
+	width: 60%;
 	height: auto;
-	position: relative;
+	margin: 0;
+	margin-right: 0; 
+	margin-left: 0;
+	z-index: 3;
+	position: absolute;
+	display: block;
 }
 
 img.line {
 	width: 100%;
 	height: auto;
+	position: absolute;
+	top: 100%;
+	left: 3px;
+	z-index: 2;
 }
+
+img.divider {
+	width: 74%;
+	height: auto;
+	float: right;
+	position: relative;
+	bottom: 14px;
+}
+
+nav {
+	width: 25%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #355497;
+	border: 3px double silver;
+	z-index: 1;
+}
+
 nav a {
+	display: block;
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1.5em;
 	font-weight: 300;
-	border-radius: 5px;
-	padding: 10px;
-	margin: 0px 1% 0px 1%;
+	text-align: center;
+	border: 3px double silver;
+	margin: 0px;
 	background-color: #e79215;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	position: relative;
+	top: 150px;
+	
+	
 }
 
 nav a:hover {
-	color: #1d95eb;
-	opacity: 20%;
-	background-color: #ffff4f;
+	opacity: .8;
 }
 
-blockquote {
-	display: none;
+
+main {
+	width: 74%;
+	float: right;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 15% auto 50px;
+}
+
+footer, .push {
+	height: 50px;
+	background-color: #355497;
+	position: absolute;
+	bottom: 0px;
+}
+
+footer {
+	z-index: 2;
+	border: 3px double silver;
+}
+
+footer p {
+	float: left;
+	padding-left: 20px;
+	color: #fff;
+	z-index: 5;
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 800px)
+{
+	nav a {
+		top: 130px;
+	}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px)
+{
+	nav a {
+		top: 115px;
+	}
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px)
+{
+	nav a {
+		top: 100px;
+	}
+
 }

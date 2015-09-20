@@ -1,7 +1,160 @@
 @charset "UTF-8";
 
-main {
-	height: 500px;
+h1 {
+	text-align: center;
+	margin: 10px 0px;
 }
 
-images
+
+div.gallery {
+	width: 100%;
+	margin-left: 62px;
+	
+}
+
+
+div.case {
+	margin: 5px;
+    padding: 5px;
+    height: 200px;
+    width: 250px;
+    float: left;
+    text-align: left;
+	border: 3px double #000000; 	
+}
+
+
+h3 {
+	text-align: center;
+	border-bottom: 3px double #000000;
+}
+
+section.case {
+	padding: 3px 10px;
+}
+
+section.case ul {
+	list-style: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2em;
+}
+
+div#last section.case ul {
+	font-size: 1.09em;
+}
+
+div.clearfix {
+	height:50px;
+}
+
+
+
+@media only screen and (min-width: 501px) and (max-width: 700px)
+{
+	div.case {
+		margin-left: 10%;
+		width: 300px;
+	}
+
+	div.case {
+	margin: 5px;
+    padding: 5px;
+    height: 200px;
+    width: 250px;
+    float: left;
+    text-align: left;
+	border: 3px double #000000; 	
+	}
+
+	div#last {
+		border-bottom: 3px double #000000;
+		margin-bottom: 50px;
+	}
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 800px)
+{
+		div.gallery {
+		width: 100%;
+	}
+
+	div.case {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+	}
+
+	div#last {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 860px)
+{
+	div.gallery {
+		margin-left: 20px;
+	}
+
+	div#last {
+		margin-bottom: 50px;
+	}
+}
+
+
+@media only screen and (min-width: 861px) and (max-width: 890px)
+{
+	div.gallery {
+		width: 100%;
+		margin-left: 30px;
+	}
+
+	div#last {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width: 891px) and (max-width: 964px)
+{
+	div.gallery {
+		width: 100%;
+		margin-left: 62px;
+	
+	}
+
+	div#last {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width: 50px) and (max-width: 500px)
+{
+	div.gallery {
+		width: 100%;
+		margin: 0;
+	}
+
+	div.case {
+		width: 98%;
+		border-bottom: none;
+		float: none;
+		margin: 0;
+		padding: 0;
+		height: auto;
+		text-align: left;
+
+	}
+
+	div#last {
+		border-bottom: 3px double #000000;
+	}
+
+	main {
+		margin-bottom: 2px;
+	}
+
+
+
+}
+

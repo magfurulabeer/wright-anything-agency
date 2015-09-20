@@ -5,9 +5,23 @@
 	padding: 0px;
 }
 
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 h1 {
 	font-family: 'Poiret One', cursive;
 	font-size: 1.8em;
+	border-top: 3px double #000000;
+	border-bottom: 3px double #000000;
+	/*border-top: 3px double #09aee5;
+	border-bottom: 3px double #09aee5;
+	color: #fff;
+	background-color: #0c42a6;*/
 }
 
 h3 {
@@ -86,7 +100,7 @@ nav a {
 	font-weight: 300;
 	border: 3px double silver;
 	border-radius: 5px;
-	padding: 0;
+	padding: 0px;
 }
 
 nav a:hover {
