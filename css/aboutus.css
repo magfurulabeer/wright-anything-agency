@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+
+img.main {
+	display: block;
+	margin: 10px auto;
+	border: 2px double black;
+}
+
+article {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+}
+article h1 {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+article p{
+	text-align: left;
+	line-height: 2em;
+	font-weight: 400;
+	font-weight: bold;
+}

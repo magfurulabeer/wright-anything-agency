@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+main {
+	color: #fff;
+}
+
+img.phoenix {
+	float: right;
+	width: 50%;
+	background-image: url(PhoenixWrightLarge.jpg);
+	margin-bottom: 16px;
+} 
+
+div.quote {
+	width: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.quote blockquote p {
+	font-family: 'Poiret One', cursive;
+	line-height: 2em;
+	font-size: 1.8em;
+	color: #7e7e7e;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+blockquote p:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:2em;
+    color:#7e7e7e;
+} 
+blockquote p:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:2em;
+    color:#7e7e7e;
+    line-height: .8em;
+}
+
+blockquote cite {
+	font-size: 1.4em;
+	float: right;
+}
+
+footer a.button {
+	text-decoration: none;
+	background-color: #e79215;
+	color: #fff;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.8em;
+	padding: 20px 40px;
+	border-radius: 5px; 
+	position: absolute;
+	top: -210px;
+	left: 14%;
+}
+
+footer a.button:hover {
+	opacity: .8;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 500px)
+{
+	img.phoenix {
+		float: none;
+		width: 80%;
+		content: url(../images/PhoenixWrightQuote.png);
+		
+		height: auto;
+		margin-top: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: block;
+	}
+
+	div.quote {
+		display: none;
+	}
+
+	a.button {
+		display: none;
+	}
+
+	nav {
+		margin-top: -4%;
+	}
+}

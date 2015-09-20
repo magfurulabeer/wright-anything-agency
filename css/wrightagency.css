@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #fff;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-position: -50px 0px;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+div.page {
+	
+	position: relative;
+	max-width: 960px;
+	background-color: #fff ;
+	margin: 0px auto;
+}/* #355497 */
+
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.8em;
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5em;
+}
+
+p {
+	font-family: 'Poiret One', cursive;
+	font-size: 1.2em;
+}
+
+/*Header Area*/
+/*Header Area*/
+/*Header Area*/
+
+
+
+header {
+	/*#e1e7ea*/
+	position: relative;
+	border-bottom: 1px solid #333;
+	height: 100px;
+	background-color: #355497;
+}
+
+/*
+.logo {
+	background: url(../images/LogoSmall.png) no-repeat;
+	height:100px;
+	width: 229px;
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}*/
+
+img.logo {
+	height:150px;
+	width: auto;
+	float: left;
+	position: absolute;
+	top: -37px;
+	left: -25px;
+}
+
+img.logo:hover {
+	opacity: .8;
+}
+
+nav {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	float: right;
+	margin-top: 25px;
+}
+nav a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0px 10px 0px 0px;
+	background-color: #e79215;
+}
+
+nav a:hover {
+	/*color: #1d95eb;
+	background-color: #ffff4f;*/
+	opacity: .8;
+}
+
+img.line {
+	position: absolute;
+	bottom: 10px;
+	right: -16px;
+	width: 70%;
+	height: auto;
+}
+
+
+
+/*Header Area*/
+/*Header Area*/
+/*Header Area*/
+
+
+main.jumbotron {
+	position: relative;
+	width:100%;
+	background-color: #fff;
+}
+
+
+
+
+/*Footer Area*/
+/*Footer Area*/
+/*Footer Area*/
+div.clearfix {
+	clear: both;
+	line-height: 1px;
+}
+
+
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: #355497;
+	text-align: left;
+}
+
+footer img.divider {
+	width: 100%;
+	position: absolute;
+	top: -20px;
+	left: 5px;
+}
+
+footer p {
+	color: #fff;
+	padding-left: 10px;
+	padding-top: 30px;
+}
+
+
+
