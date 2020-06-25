@@ -97,6 +97,16 @@ footer a.button:hover {
 
 @media only screen and (min-width: 501px) and (max-width: 964px)
 {
+	
+	main.jumbotron {
+		position: relative;
+  		min-height: 100vh;
+	}
+	
+	#content-wrap {
+	  padding-bottom: 2.5rem;    /* Footer height */
+	}
+	
 	img.phoenix {
 		content: url(../images/PhoenixWrightQuote.png);
 		margin: 0 auto 0 auto;
